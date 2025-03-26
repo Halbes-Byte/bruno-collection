@@ -1,0 +1,105 @@
+{
+  "name": "sb-backend-collections",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "GET Token",
+      "filename": "GET Token.bru",
+      "seq": 2,
+      "request": {
+        "url": "{{url}}realms/study-buddies/protocol/openid-connect/token",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "formUrlEncoded",
+          "json": "{\n  \"client-id\": \"sb-backend\",\n  \"grant_type\": \"password\",\n  \"username\": \"user\",\n  \"password\": \"pass\"\n}",
+          "formUrlEncoded": [
+            {
+              "name": "grant_type",
+              "value": "password",
+              "enabled": true
+            },
+            {
+              "name": "client_id",
+              "value": "sb-backend",
+              "enabled": true
+            },
+            {
+              "name": "username",
+              "value": "user",
+              "enabled": true
+            },
+            {
+              "name": "password",
+              "value": "pass",
+              "enabled": true
+            }
+          ],
+          "multipartForm": [
+            {
+              "type": "text",
+              "name": "grant_type",
+              "value": "password",
+              "enabled": true
+            },
+            {
+              "type": "text",
+              "name": "client_id",
+              "value": "sb-backend",
+              "enabled": true
+            },
+            {
+              "type": "text",
+              "name": "username",
+              "value": "user",
+              "enabled": true
+            },
+            {
+              "type": "text",
+              "name": "password",
+              "value": "pass",
+              "enabled": true
+            }
+          ],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    }
+  ],
+  "activeEnvironmentUid": "WsvosE3erhAP438as0dEv",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "url",
+          "value": "http://localhost:7070/",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "Local"
+    }
+  ],
+  "brunoConfig": {
+    "version": "1",
+    "name": "sb-backend-collections",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.0005207061767578125,
+    "filesCount": 2
+  }
+}
