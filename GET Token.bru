@@ -1,0 +1,34 @@
+meta {
+  name: GET Token
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}realms/study-buddies/protocol/openid-connect/token
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:json {
+  {
+    "client-id": "sb-backend",
+    "grant_type": "password",
+    "username": "user",
+    "password": "pass"
+  }
+}
+
+body:form-urlencoded {
+  grant_type: password
+  client_id: sb-backend
+  username: user
+  password: pass
+}
+
+body:multipart-form {
+  grant_type: password
+  client_id: sb-backend
+  username: user
+  password: pass
+}

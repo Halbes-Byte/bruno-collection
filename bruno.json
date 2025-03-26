@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Study-buddies-backend-colletion",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
